@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(pr-description)",
+      "Skill(pr-description:*)",
+      "Skill(github-commit)",
+      "Skill(github-commit:*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git apply *)",
+      "Bash(git mv *)",
+      "Skill(update-config)",
+      "Skill(update-config:*)"
+    ]
+  }
+}
