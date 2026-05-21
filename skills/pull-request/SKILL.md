@@ -74,8 +74,15 @@ Brief context on why this change is needed.
 
 ---
 
-8. **Handle push behavior** *(only if `ghCli` is a version string)*
-   - If a PR **already exists**: run `gh pr edit --title "<title>" --body "<description>"`
-   - If **no PR exists**: run `gh pr create --title "<title>" --body "<description>"`
-   - After pushing, output the PR URL
-   - If `ghCli` is `false` or `null`: display the title and description for the user to copy-paste manually
+8. **Show a preview and ask for confirmation**
+   - Display the generated title and full description to the user
+   - Ask: "Does this look good? I can create the PR, make changes, or copy-paste it for you."
+   - Wait for the user's response before doing anything with GitHub
+
+9. **Handle push behavior based on user's response** *(only if `ghCli` is a version string)*
+   - If approved: 
+     - PR **already exists** → run `gh pr edit --title "<title>" --body "<description>"`
+     - No PR exists → run `gh pr create --title "<title>" --body "<description>"`
+     - Output the PR URL after pushing
+   - If the user requests changes: update the title or description accordingly, show the preview again, and repeat
+   - If `ghCli` is `false` or `null`: skip the push offer — the preview is the final output for the user to copy-paste manually
