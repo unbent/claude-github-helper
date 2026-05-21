@@ -15,7 +15,12 @@
       "Bash(git remote *)",
       "Bash(git checkout *)",
       "Bash(gh *)",
-      "PowerShell(gh *)"
+      "PowerShell(gh *)",
+      "Bash(cp * ~/.claude/*)",
+      "Bash(mkdir -p ~/.claude/*)",
+      "Bash(mv ~/.claude/* ~/.claude/*)",
+      "Bash(ls ~/.claude/*)",
+      "Bash(diff ~/.claude/* *)"
     ]
   }
 }
