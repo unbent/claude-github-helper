@@ -5,8 +5,7 @@
       "hooks": [
         {
           "type": "command",
-          "command": "node hooks/post-commit-summary.js",
-          "shell": "powershell"
+          "command": "node hooks/post-commit-summary.js"
         }
       ]
     }
