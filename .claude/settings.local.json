@@ -1,17 +1,20 @@
 {
   "permissions": {
     "allow": [
-      "Skill(pr-description)",
-      "Skill(pr-description:*)",
-      "Skill(github-commit)",
-      "Skill(github-commit:*)",
+      "Skill(pull-request)",
+      "Skill(pull-request:*)",
+      "Skill(commit)",
+      "Skill(commit:*)",
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(git push *)",
       "Bash(git apply *)",
       "Bash(git mv *)",
       "Skill(update-config)",
-      "Skill(update-config:*)"
+      "Skill(update-config:*)",
+      "Bash(git remote *)",
+      "Bash(git checkout *)",
+      "Bash(gh --version)"
     ]
   }
 }

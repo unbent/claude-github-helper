@@ -1,0 +1,14 @@
+{
+  "name": "github-helper",
+  "description": "Claude Code plugin with skills for GitHub commits and PR descriptions",
+  "version": "1.0.0",
+  "author": {
+    "name": "Daniel"
+  },
+  "homepage": "https://github.com/unbent/claude-github-helper",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:unbent/claude-github-helper.git"
+  },
+  "license": "ISC"
+}
