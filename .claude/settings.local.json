@@ -21,7 +21,8 @@
       "Bash(cp .claude/skills/github-commit/push-reference.md skills/github-commit/push-reference.md)",
       "Bash(cp .claude/skills/pr-description/SKILL.md skills/pr-description/SKILL.md)",
       "Bash(mkdir -p hooks && cp .claude/hooks/post-commit-summary.js hooks/post-commit-summary.js)",
-      "Bash(rm -rf .claude/skills .claude/hooks)"
+      "Bash(rm -rf .claude/skills .claude/hooks)",
+      "Bash(gh --version)"
     ],
     "additionalDirectories": [
       "C:\\Users\\Daniel\\Projects\\claude-skills-learning\\github-helper\\.claude\\hooks",

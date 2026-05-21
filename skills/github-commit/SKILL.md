@@ -4,6 +4,8 @@ description: Stages relevant changes based on user context, commits with a struc
 allowed-tools: Read, Grep, Glob, Bash
 ---
 
+!`node "${CLAUDE_SKILL_DIR}/../../scripts/load-settings.js"`
+
 When committing changes:
 
 1. **Identify the working directory and project name.**
@@ -41,11 +43,15 @@ When committing changes:
    - A bulleted list of all files changed in the commit
    - A brief description of what was committed
    - The unpushed commits list is handled automatically by the post-commit hook — relay it from the hook's injected context rather than running `git log` yourself
-   - Ask whether to push
 
-   If the user mentioned pushing in their request, follow the steps in `push-reference.md`.
+   Then handle push behavior based on the `autoPush` setting:
+   - `"always"` — push immediately without asking. Follow the steps in `push-reference.md`.
+   - `"never"` — do not mention pushing at all.
+   - `"ask"` — ask whether to push. If the user says yes, follow the steps in `push-reference.md`.
 
-   Example format (when not auto-pushing):
+   If the user explicitly mentioned pushing in their request, always push regardless of `autoPush`.
+
+   Example format (`autoPush: "ask"`):
    ```
    Committed: 1_add-numbers_create-add-numbers-file-and-function
 
