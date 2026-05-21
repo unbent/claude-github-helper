@@ -1,10 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Skill(pr-description)",
-      "Skill(pr-description:*)",
-      "Skill(github-commit)",
-      "Skill(github-commit:*)",
+      "Skill(pull-request)",
+      "Skill(pull-request:*)",
+      "Skill(commit)",
+      "Skill(commit:*)",
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(git push *)",
@@ -13,20 +13,8 @@
       "Skill(update-config)",
       "Skill(update-config:*)",
       "Bash(git remote *)",
-      "Bash(ls ~/.ssh/*.pub 2>/dev/null || echo \"No public keys found\")",
-      "Read(//c/Users/Daniel/.ssh/**)",
       "Bash(git checkout *)",
-      "Bash(npm init *)",
-      "Bash(cp .claude/skills/github-commit/SKILL.md skills/github-commit/SKILL.md)",
-      "Bash(cp .claude/skills/github-commit/push-reference.md skills/github-commit/push-reference.md)",
-      "Bash(cp .claude/skills/pr-description/SKILL.md skills/pr-description/SKILL.md)",
-      "Bash(mkdir -p hooks && cp .claude/hooks/post-commit-summary.js hooks/post-commit-summary.js)",
-      "Bash(rm -rf .claude/skills .claude/hooks)",
       "Bash(gh --version)"
-    ],
-    "additionalDirectories": [
-      "C:\\Users\\Daniel\\Projects\\claude-skills-learning\\github-helper\\.claude\\hooks",
-      "C:\\Users\\Daniel\\Projects\\claude-skills-learning\\github-helper\\.claude\\skills"
     ]
   }
 }

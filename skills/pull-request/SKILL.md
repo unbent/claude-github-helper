@@ -1,5 +1,5 @@
 ---
-name: pr-description
+name: pull-request
 description: Writes and creates pull requests. Use when creating a PR, opening a PR, writing a PR description, or when the user asks to summarize changes for a pull request.
 allowed-tools: Read, Grep, Glob, Bash
 ---

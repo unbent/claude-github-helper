@@ -1,5 +1,5 @@
 ---
-name: github-commit
+name: commit
 description: Stages relevant changes based on user context, commits with a structured name, and pushes to GitHub. Use when the user says "commit X" or "let's commit the X feature".
 allowed-tools: Read, Grep, Glob, Bash
 ---
