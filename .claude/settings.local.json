@@ -5,16 +5,22 @@
       "Skill(pull-request:*)",
       "Skill(commit)",
       "Skill(commit:*)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(git push *)",
       "Bash(git apply *)",
       "Bash(git mv *)",
-      "Skill(update-config)",
-      "Skill(update-config:*)",
       "Bash(git remote *)",
       "Bash(git checkout *)",
-      "Bash(gh --version)"
+      "Bash(gh *)",
+      "PowerShell(gh *)",
+      "Bash(cp * ~/.claude/*)",
+      "Bash(mkdir -p ~/.claude/*)",
+      "Bash(mv ~/.claude/* ~/.claude/*)",
+      "Bash(ls ~/.claude/*)",
+      "Bash(diff ~/.claude/* *)"
     ]
   }
 }
